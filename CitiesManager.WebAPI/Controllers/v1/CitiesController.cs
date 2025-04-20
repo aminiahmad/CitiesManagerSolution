@@ -86,7 +86,7 @@ namespace CitiesManager.WebAPI.Controllers.v1
 
         // POST: api/Cities
         [HttpPost]
-        public async Task<ActionResult<City>> PostCity([Bind(nameof(city.CityId), nameof(city.CityId))] City city)
+        public async Task<ActionResult<City>> PostCity([Bind(nameof(city.CityId), nameof(city.CityName))] City city)
         {
             _context.Citys.Add(city);
             await _context.SaveChangesAsync();

@@ -4,6 +4,19 @@
         <name>CitiesManager.WebAPI</name>
     </assembly>
     <members>
+        <member name="T:CitiesManager.WebAPI.ConfigureServices.ConfigureServices">
+            <summary>
+            extension method for IServiceCollection for clean code on program.cs
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.ConfigureServices.ConfigureServices.ConfigurationService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            add services to serviceCollection
+            </summary>
+            <param name="services">Object of ServiceCollection to add services to program</param>
+            <param name="configuration">Configuration for config connection string to sql</param>
+            <returns>ServiceCollection to builder.services.Name Of Extension Method</returns>
+        </member>
         <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCitys">
             <summary>
             to get list of cities (with city name and city id ) from 'cities' table
@@ -38,6 +51,18 @@
             <inheritdoc />
         </member>
         <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.WebAPI.Migrations.createDb">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.createDb.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.createDb.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.createDb.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>
